@@ -54,6 +54,8 @@ public class VariableExample {
 			System.out.println("중지합니다.");
 		}else {
 			System.out.println("시작합니다.");
+			
+			//git관련 작업 추가 
 		}
 	}
 	
