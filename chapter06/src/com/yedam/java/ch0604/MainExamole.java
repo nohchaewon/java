@@ -23,10 +23,19 @@ public class MainExamole {
 		int intResult2 = myCom.sum1(new int[] {1,2,3,4,5,6});
 		System.out.println("intResult2:"+intResult2);
 		
-		int intResult3 = myCom.(1,2,3);
+		int intResult3 = myCom.sum2(1,2,3);
 		System.out.println("intResult3"+intResult3);
 		
 		int intResult4 = myCom.sum2(1,2,3,4,5);
 		System.out.println("intResult"+intResult4);
+		
+		myCalc.execute();
+		
+		double result1 = myCalc.areaRectangle(10);
+		double result2 = myCalc.areaRectangle(10,20);
+		
+		System.out.println("정사긱형의 넓이:"+result1);
+		System.out.println("직사각형의 넓이:"+result2);
+	
 	}
 }
