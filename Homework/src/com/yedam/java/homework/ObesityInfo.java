@@ -1,20 +1,22 @@
 package com.yedam.java.homework;
 
 public class ObesityInfo extends StandardWeightInfo{
-
-	ObesityInfo(String name, int kg, int he, int bmi) {
-		super(name, kg, he, bmi);
+	public double obesity;
+	ObesityInfo(String name, int kg, int he) {
+		super(name, kg, he, he);
 		// TODO Auto-generated constructor stub
 	}
 	public void getInformation() {
-	 	System.out.println("이름:"+name);
-		System.out.println("몸무게:"+kg);
-		System.out.println("키:"+he);
-		System.out.println("비만도:"+bmi);
+	 	
+		if(obesity>25) {
+			System.out.println(name+"님의"+"신장"+he+","+"몸무게"+kg+getobesity());
+		}else {
+			System.out.println(name+"님의"+"신장"+he+","+"몸무게"+kg+","+"비만입니다.");
+		}
  }
- public double getStandardWeight() {
-	int height;
-	Object StandardWeight = (height-100)*0.9);
-	return  (double) StandardWeight;
- }
+ private double getobesity() {
+		// TODO Auto-generated method stub
+		return obesity;
+	}
+
 }

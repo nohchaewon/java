@@ -5,14 +5,12 @@ public class Human {
 	public String name;
 	public int kg;
 	public int he;
-	public int bmi;
 	
 	//초기값
-	Human(String name, int kg,int he, int bmi){
+	Human(String name, int kg,int he){
 		this.name=name;
 		this.kg=kg;
 		this.he=he;
-		this.bmi=bmi;
 	}
 	
 	
@@ -53,15 +51,6 @@ public class Human {
 
 
 
-	public int getBmi() {
-		return bmi;
-	}
-
-
-
-	public void setBmi(int bmi) {
-		this.bmi = bmi;
-	}
 
 
 
@@ -70,7 +59,6 @@ public class Human {
 		System.out.println("이름:"+name);
 		System.out.println("몸무게:"+kg);
 		System.out.println("키:"+he);
-		System.out.println("비만도:"+bmi);
 	}
 }
 
